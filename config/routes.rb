@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   get 'search' => 'searches#search'
 
+  resources :categories
+
 
 end

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 mx-auto mt-5">
+      <div class="text-center">
+        <h5 class="text-main">編集ページ</h5>
+      </div>
+      <%= form_with model:@category, local:true do |f| %>
+        <h6 class="mt-3">category</h6>
+        <%= f.text_field :name %>
+        <%= f.submit'編集する', class: "btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
+</div>
